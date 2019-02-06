@@ -467,10 +467,12 @@ class SQLParser{
 				);
 
 				array_shift($tokens);
-
+                
 				if ($tokens[0] != '('){
 					$index['name'] = $this->decode_identifier(array_shift($tokens));
-				}
+				} else if (!is_null($constraint)) {
+                    $index['name'] = $constraint;
+                }
 
 				$this->parse_index_columns($tokens, $index);
 
