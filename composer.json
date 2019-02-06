@@ -1,5 +1,5 @@
 {
-	"name": "iamcal/sql-parser",
+	"name": "pinahq/sql-parser",
 	"description": "MySQL schema parser",
 	"type": "library",
 	"license": "MIT",
